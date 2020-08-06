@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200512061553_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200512061553_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200512235620_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200512235620_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513010737_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513010737_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513010901_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513010901_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513011520_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513011520_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513011926_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513011926_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513012133_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513012133_Tabelas_Iniciais.Designer.cs" />
+    <Compile Remove="Migrations\20200513012956_Tabelas_Iniciais.cs" />
+    <Compile Remove="Migrations\20200513012956_Tabelas_Iniciais.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnimaDigital.Domain\AnimaDigital.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

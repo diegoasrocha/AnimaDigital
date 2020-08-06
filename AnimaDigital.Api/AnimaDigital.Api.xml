@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnimaDigital.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AnimaDigital.Api.Controllers.AlunoController.Post(AnimaDigital.Application.DTOs.AlunoDTO)">
+            <summary>
+            Realiza o cadastro de um novo aluno.
+            </summary>
+            <param name="aluno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.GradeController.Post(AnimaDigital.Application.DTOs.GradeDTO)">
+            <summary>
+            Realiza o cadastro de uma nova grade.
+            </summary>
+            <param name="grade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.GradeController.Get(System.Int32)">
+            <summary>
+            Recupera informações de uma grade, incluindo dados do professor e de alunos.
+            </summary>
+            <param name="codGrade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.MatriculaController.Post(AnimaDigital.Application.DTOs.MatriculaDTO)">
+            <summary>
+            Matricula um aluno em uma grade informada.
+            </summary>
+            <param name="matricula"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.MatriculaController.Delete(AnimaDigital.Application.DTOs.MatriculaDTO)">
+            <summary>
+            Desmatricula um aluno de uma grade informada
+            </summary>
+            <param name="matricula"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.ProfessorController.Post(AnimaDigital.Application.DTOs.ProfessorDTO)">
+            <summary>
+            Realiza o cadastro de um novo professor.
+            </summary>
+            <param name="professor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AnimaDigital.Api.Controllers.ProfessorController.Get(System.String)">
+            <summary>
+            Recupera informações de um professor, incluindo salário, total de grades e total de alunos.
+            </summary>
+            <param name="cpf"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
