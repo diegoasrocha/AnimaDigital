@@ -27,7 +27,8 @@ namespace AnimaDigital.Application
 
         private static void AddContext(IServiceCollection services)
             => services.AddDbContext<AnimaContext>(options => {
-                options.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnection"));
+            options.UseInMemoryDatabase();
+                //options.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnection"));
             });
 
         private static void AddRepositories(IServiceCollection services)

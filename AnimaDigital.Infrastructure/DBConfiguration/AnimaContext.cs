@@ -11,7 +11,8 @@ namespace AnimaDigital.Infrastructure.DBConfiguration
         public AnimaContext(DbContextOptions<AnimaContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnection") );
+            => optionsBuilder.UseInMemoryDatabase();
+            //=> optionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnection") );
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Aluno> Alunos { get; set; }
